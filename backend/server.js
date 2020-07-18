@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 const db = require("./app/models");
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync().then(() => {
     console.log("Drop and re-sync db.");
   });
 
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Hello world!" });
 });
 
-require("./app/routes/turorial.routes")(app);
+require("./app/routes/jobs.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
