@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-super/
+.idea/
+.notes
+.vscode/
+package-lock.json
+_webRXLoginForm.tsx
+yarn-error.log
