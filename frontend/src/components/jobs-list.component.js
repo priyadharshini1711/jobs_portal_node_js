@@ -142,7 +142,7 @@ export default class JobsList extends Component {
         <div className="col-md-6">
           {currentjob && jobs ? (
             <div>
-              <h4>Tutorial</h4>
+              <h4>Job Details</h4>
               <div>
                 <label>
                   <strong>Title:</strong>
@@ -170,9 +170,8 @@ export default class JobsList extends Component {
               </Link>
             </div>
           ) : (
-              <div>
-                <br />
-                <p>Please click on a Jobs...</p>
+              <div className='ml-3 mt-5'>
+                <p>Please select a job to view details</p>
               </div>
             )}
         </div>

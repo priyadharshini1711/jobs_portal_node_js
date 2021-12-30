@@ -120,7 +120,7 @@ export default class Jobs extends Component {
       <div>
         {currentTutorial ? (
           <div className="edit-form">
-            <h4>Jobs</h4>
+            <h4>Edit Job</h4>
             <form>
               <div className="form-group">
                 <label htmlFor="title">Title</label>
@@ -181,7 +181,7 @@ export default class Jobs extends Component {
             >
               Update
             </button>
-            <p>{this.state.message}</p>
+            <p className="mt-3">{this.state.message}</p>
           </div>
         ) : (
           <div>

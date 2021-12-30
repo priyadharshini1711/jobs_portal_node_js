@@ -78,7 +78,7 @@ export default class AddJobs extends Component {
         ) : (
           <div>
             <div className="form-group">
-            <h4>Submit Job</h4>
+            <h4>Add Job</h4>
               <label htmlFor="title">Title</label>
               <input
                 type="text"
@@ -105,7 +105,7 @@ export default class AddJobs extends Component {
             </div>
 
             <button onClick={this.saveJob} className="btn btn-success">
-              Submit
+              Add
             </button>
           </div>
         )}
